@@ -22,12 +22,14 @@ module.exports = {
         electronBuilder: {
             builderOptions: {
                 // win: {
-                //
+                //icon:'./public/icon.ico', // 修改打包应用图标必须为.ico文件否则将会报错
+                // asar: false, // 配置打包是否添加为asar压缩文件
+                // target: ["nsis","zip"] // 设置打包为zip包绿色免安装版本删除则打包为安装的exe程序
                 // },
                 // mac: {
                 //
                 // },
-                productName: 'AppDemo'
+                productName: 'AppDemo' // 打包的应用名称（可自行修改）
             }
             // nodeModulesPath: ['./node_modules']
         }

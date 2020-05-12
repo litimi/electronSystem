@@ -16,10 +16,11 @@ npm run electron:build
 ```
 
 ### 项目配置说明
-```
-若是无法安装成功项目依赖可采用一下方式进行手工配置
 
-在src文件夹下创建background.js文件并粘贴以下代码
+### 若是无法安装成功项目依赖可采用一下方式进行手工配置
+
+### 在src文件夹下创建background.js文件并粘贴以下代码
+```
 'use strict'
 
 import { app, protocol, BrowserWindow } from 'electron'
@@ -146,8 +147,10 @@ if (isDevelopment) {
     })
   }
 }
+```
 
-创建vue.config.js并将以下代码复制粘贴
+### 创建vue.config.js并将以下代码复制粘贴
+```
 const path = require('path');
 
 function resolve (dir) {
@@ -169,13 +172,15 @@ module.exports = {
       .set('components', resolve('src/components'));
   }
 };
+```
 
-修改app名称
-修改public/index.html
-将title修改为自己项目想要的名字即可
+### 修改app名称
+### 修改public/index.html
+### 将title修改为自己项目想要的名字即可
 
-打包软件图标配置及app名称
-修改vue.config.js
+### 打包软件图标配置及app名称
+### 修改vue.config.js
+```
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
@@ -192,5 +197,12 @@ module.exports = {
 
 ```
 
+### 可在packge.json文件添加以下内容(添加应用证书以及应用所有权归属人/公司)
+```
+"author": {
+  "name":"Mr_lixuesheng"
+},
+"license": "MIT",
+```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
