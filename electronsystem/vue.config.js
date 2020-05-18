@@ -29,7 +29,7 @@ module.exports = {
                 // mac: {
                 //
                 // },
-                productName: 'AppDemo' // 打包的应用名称（可自行修改）
+                productName: 'electron+vue基础结构' // 打包的应用名称（可自行修改）
             }
             // nodeModulesPath: ['./node_modules']
         }

@@ -113,12 +113,6 @@ function createWindow () {
     }
     // Create the browser window.
     win = new BrowserWindow({
-        // width: 800,
-        // height: 600,
-        // webPreferences: {
-        //     webSecurity: false, // 取消跨域限制
-        //     nodeIntegration: true
-        // }
         height: canMove?740:680,
         width: 1110,
         minWidth: 1110,
